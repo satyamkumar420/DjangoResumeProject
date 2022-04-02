@@ -1,0 +1,86 @@
+{% extends 'core/base.html' %}
+
+{% block content %}
+<title>{% block title %}Contact{% endblock title %}</title>
+<div class="container mt-3">
+    <h1 class="text-warning mb-2 border-bottom">CONTACT US</h1>
+    <div class="row text-white mb-3">
+        <p class="mx-auto mb-3">
+            Do you have any questions? Please do not hesitate to contact us directly. Our team will come back to you
+            within
+        </p>
+        <div class="col-sm-9 mb-2">
+            <form action="">
+                <div class="form-now">
+                    <div class="form-group col-md-5">
+                        <label for="inputName">Your Name</label>
+                        <input type="text" class="form-control" id="inputName" placeholder="Enter your name">
+                    </div>
+                    <div class="form-group col-md-5 mt-2">
+                        <label for="inputEmail">Your Email *</label>
+                        <input type="email" class="form-control" id="inputEmail" placeholder="Enter your email"
+                            required>
+                    </div>
+                </div>
+                <div class="form-group col-md-5 mt-2">
+                    <label for="inputName">Your Number *</label>
+                    <input type="text" class="form-control" id="inputSubject" placeholder="Enter your number" required>
+                </div>
+                <div class="mb-3 mt-2">
+                    <label for="inputTextarea">Your message *</label>
+                    <br>
+                    <textarea class="form-control1" name="textarea" id="inputTextarea"
+                        placeholder="Enter your message here..." cols="45" rows="5" required></textarea>
+                </div>
+                <button class="btn btn-primary" type="submit">Send</button>
+            </form>
+        </div>
+        <div class="col-sm-3 text-center">
+            <ul class="list-unstyled">
+                <li>
+                    <i class="fa-solid fa-location-dot fa-2x i-color"></i>
+                    <p> Patana, Bihar, India</p>
+                </li>
+                <li>
+                    <i class="fa-solid fa-phone fa-2x i-color"></i>
+                    <p> +91 9693756696 </p>
+                </li>
+                <li>
+                    <p>
+                        <a href="mailto:satyamkumar2460@gmail.com "><i
+                                class="fa-solid fa-envelope-circle-check fa-2x i-color"></i> </a>
+                        <br>
+                        <span>
+                            satyamkumar2460@gmail.com
+                        </span>
+
+                    </p>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="container  text-center mb-4 ">
+    <ul class="row">
+        <li class="col-sm-1 offset-sm-3 ">
+            <a href="https://twitter.com/SatyaG53746875" target="_blank" class="twitter"><i
+                    class="fa-brands fa-twitter i-color ms-5 mt-4 fa-2x twitter"></i></a>
+        </li>
+        <li class="col-sm-1">
+
+            <a href="https://www.linkedin.com/in/satyam-kumar-4b8293212/" target="_blank" class="linkedin"><i
+                    class="fa-brands fa-linkedin i-color ms-5 mt-4 fa-2x linkedin"></i></a>
+        </li>
+        <li class="col-sm-1">
+            <a href="https://www.instagram.com/satyag420/" target="_blank" class="instagram"><i
+                    class="fa-brands fa-instagram i-color ms-5 mt-4 fa-2x instagram"></i></a>
+
+        </li>
+        <li class="col-sm-1">
+            <a href="https://github.com/satyamkumar420" target="_blank" class="github"><i
+                    class="fa-brands fa-github i-color ms-5 mt-4 fa-2x github"></i></a>
+        </li>
+    </ul>
+</div>
+
+{% endblock content %}

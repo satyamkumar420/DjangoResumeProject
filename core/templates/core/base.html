@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Home{% endblock title %}</title>
+    <link rel="stylesheet" href="{% static 'core/css/bootstrap.css' %}">
+    <link rel="stylesheet" href="{% static 'core/css/all.css' %}">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,500;0,600;0,700;0,800;1,300;1,600;1,700&family=Satisfy&display=swap"
+        rel="stylesheet">
+    <link rel="shortcut icon" href="{% static 'core/images/Satya1.png' %}" type="image/x-icon">
+    <link rel="stylesheet" href="{% static 'core/css/style.css' %}">
+    {% block corecss %}
+    {% endblock  %}
+</head>
+
+<body>
+    <div class="container-fluid bg-dark">
+        <div class="row">
+            <div class="col-sm-2">
+                <!-- Side Bar -->
+                {% include 'core/sidebar.html' %}
+            </div>
+            <div class="col-sm-10">
+                <!-- Main Content -->
+                {% block content %}
+
+                {% endblock content %}
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="{% static 'core/js/jquery.js' %}"></script>
+    <script src="{% static 'core/js/popper.js' %}"></script>
+    <script src="{% static 'core/js/bootstrap.js' %}"></script>
+    <script src="{% static 'core/js/all.js' %}"></script>
+</body>
+
+</html>

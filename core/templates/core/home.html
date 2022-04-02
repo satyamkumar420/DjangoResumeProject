@@ -1,0 +1,38 @@
+{% extends 'core/base.html' %}
+{% load static %}
+
+{% block content %}
+
+<div class="mt-4 " width="100%" height="100%">
+    <div class="text-center">
+        <img src="{% static 'core/images/Satya1.png' %}" alt="Profile" class="img-thumbnail profile" width="250px"
+            height="150px">
+    </div>
+    <div class="mt-5 text-white mx-5">
+        <h1 class=" font-weight-bold mt-5 st-font">Hello</h1>
+        <div class=" px-4 pop-font" style="line-height:2rem;">
+            <p style="text-indent:100px;">I'm <b class="text-warning">Satyam Kumar </b> having 2 years of full-stack
+                web development experience for global bussinesses, I offer the technical expertise you are seeking for
+                your web developer position.
+            </p>
+            <p>
+                Since earning my bachelor's degree in internet and web development from R.G.P.V University, I have
+                served as a web developer at <b class="text-warning">Django Technology</b>, one of biggest premier
+                digital marketing and web development firm. In this position, I have led web development projects for
+                clients in diverse industries including technology, manufacturing, pharameceuticals, and hospitally,
+                retail and financial services.
+            </p>
+            <p>
+                I have worked with a wide range of clients, from small startups to large enterprises. I have
+                developed and maintained a wide range of web applications for clients.
+            </p>
+        </div>
+    </div>
+    <div class="text-center">
+        <a href="{% url 'contact' %}" class="btn btn-outline-warning my-3 mx-5">Hire me</a>
+        <a href="{% url 'contact' %}" class="btn btn-outline-info my-3">Contact</a>
+
+    </div>
+</div>
+
+{% endblock content %}

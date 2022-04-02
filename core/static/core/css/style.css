@@ -1,0 +1,131 @@
+/* Font CSS */
+.st-font {
+    font-family: 'Satisfy';
+}
+
+.pop-font {
+    font-family: 'Poppins', sans-serif;
+}
+
+* {
+    background: #1d2535;
+}
+
+.profile {
+
+    background: #1d2535;
+    border: 3px solid rgb(187, 187, 7);
+    border-radius: 10px;
+    box-shadow: 3px 2px 13px 10px rgb(17, 16, 33);
+}
+
+.profile:hover {
+    transition: all 0.5s;
+    transform: rotate3d(0, 0, 1, 360deg);
+}
+
+.logo {
+    cursor: pointer;
+}
+
+body {
+    height: 100%;
+    width: 100%;
+}
+
+.container-fluid {
+    min-height: 100%;
+}
+
+h3 {
+    font-weight: bolder;
+}
+
+h1 {
+    font-weight: 600;
+}
+
+.i-color {
+    color: rgb(211, 205, 15);
+}
+
+.ss-color {
+    color: silver;
+}
+
+a.nav-link {
+    color: white;
+    margin-right: 30px;
+    border-radius: 15px !important;
+    ;
+}
+
+a.nav-link:hover {
+    background: rgb(255, 204, 21);
+    color: #1d2535;
+}
+
+a.nav-link.active {
+    background: rgb(248, 252, 24);
+    color: #1d2535;
+}
+
+label {
+    padding: 3px;
+}
+
+.twitter:hover {
+    color: #00aced;
+    transition: all 0.3s;
+}
+
+.instagram:hover {
+    color: #e1306c;
+    transition: all 0.3s;
+}
+
+.linkedin:hover {
+    color: #0077B5;
+    transition: all 0.3s;
+}
+
+.github:hover {
+    color: azure;
+    transition: all 0.3s;
+}
+
+.form-control1 {
+    border-radius: 10px;
+    background: azure;
+    padding: 3px;
+    font-size: 18px;
+    font-weight: 600;
+    resize: none;
+    text-transform: capitalize;
+
+}
+
+.form-control {
+    border-radius: 10px;
+    background: azure;
+    padding: 5px;
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: capitalize;
+
+}
+
+li .fa-location-dot:hover {
+    color: #3df01e;
+    cursor: pointer;
+}
+
+li .fa-phone:hover {
+    color: #3df01e;
+    cursor: pointer;
+}
+
+li .fa-envelope-circle-check:hover {
+    color: #3df01e;
+    cursor: pointer;
+}
